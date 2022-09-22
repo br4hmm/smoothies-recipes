@@ -7,11 +7,11 @@ const getLogin = (req, res) => {
 };
 
 const postSignup = (req, res) => {
-  res.status(201).send('Done Signup!');
+  res.status(201).send(req.body);
 };
 
 const postLogin = (req, res) => {
-  res.status(201).send('Done Login!');
+  res.status(201).send(req.body);
 };
 
 module.exports = {
