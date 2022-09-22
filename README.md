@@ -8,7 +8,7 @@ _Will be added soon..._
 
 ## Auth Routes
 
-| Operations                  | HTTP Methods   |
+| About                       | HTTP Methods   |
 | --------------------------- | -------------- |
 | Sign up page                | `GET /signup`  |
 | Log in page                 | `GET /login`   |
