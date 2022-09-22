@@ -1,8 +1,12 @@
+require('dotenv').config();
+require('express-async-errors');
+
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
+
 const authRoutes = require('./routes/auth');
-require('dotenv').config();
+const errorHandler = require('./middlewares/error');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -22,6 +26,7 @@ app.get('/', (req, res) => res.status(200).render('home'));
 app.get('/smoothies', (req, res) => res.status(200).render('smoothies'));
 app.use(authRoutes);
 
+app.use(errorHandler);
 app.use((req, res) => {
   res.status(404).render('404');
 });
