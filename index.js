@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
+const authRoutes = require('./routes/auth');
 require('dotenv').config();
 
 const app = express();
@@ -17,6 +18,8 @@ app.use(morgan('dev'));
 
 app.get('/', (req, res) => res.status(200).render('home'));
 app.get('/smoothies', (req, res) => res.status(200).render('smoothies'));
+
+app.use(authRoutes);
 
 app.use((req, res) => {
   res.status(404).render('404');
