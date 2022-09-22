@@ -8,10 +8,12 @@ _Will be added soon..._
 
 ## Auth Routes
 
-- Sign up page `GET /signup`
-- Log in page `GET /login`
-- create new user `POST /signup`
-- authenticate current user `POST /login`
-- log a user out `GET /logout`
+| Operations                  | HTTP Methods   |
+| --------------------------- | -------------- |
+| Sign up page                | `GET /signup`  |
+| Log in page                 | `GET /login`   |
+| Create a new user           | `POST /signup` |
+| Authenticate a current user | `POST /login`  |
+| Log a user out              | `GET /logout`  |
 
 _Enjoy 💫_
