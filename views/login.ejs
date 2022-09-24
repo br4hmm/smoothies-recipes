@@ -1,7 +1,29 @@
 <html lang="en">
   <%- include('partials/head'); -%> <%- include('partials/header'); -%>
 
-  <h1>Login</h1>
+  <form>
+    <h2>Log In</h2>
+
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" required />
+    <div class="email error"></div>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required />
+    <div class="password error"></div>
+
+    <button>Log In</button>
+  </form>
+
+  <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+
+      const email = form.email.value;
+      const password = form.password.value;
+    });
+  </script>
 
   <%- include('partials/footer'); -%>
 </html>
