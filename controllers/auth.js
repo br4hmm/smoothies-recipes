@@ -29,6 +29,3 @@ module.exports = {
   postSignup,
   postLogin,
 };
-
-// add express async errors and make it work
-// continue as the tutorial
