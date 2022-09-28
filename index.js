@@ -28,20 +28,6 @@ app.get('/', (req, res) => res.status(200).render('home'));
 app.get('/smoothies', (req, res) => res.status(200).render('smoothies'));
 app.use(authRoutes);
 
-app.get('/set-cookie', (req, res) => {
-  res.cookie('isLogin', false, {
-    maxAge: 10000 * 60 * 60 * 24,
-    secure: true,
-    httpOnly: true,
-  });
-  res.send('done');
-});
-
-app.get('/get-cookie', (req, res) => {
-  const cookies = req.cookies;
-  res.json(cookies);
-});
-
 app.use(errorHandler);
 app.use((req, res) => {
   res.status(404).render('404');

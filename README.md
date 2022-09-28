@@ -1,4 +1,4 @@
-# Node Auth
+# Hima Smoothies
 
 Auth example project built with Express.js & MongoDB
 
