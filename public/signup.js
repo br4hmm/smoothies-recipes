@@ -18,8 +18,6 @@ form.addEventListener('submit', async event => {
 
   const data = await result.json();
 
-  console.log(data);
-
   emailError.textContent = data.email;
   passwordError.textContent = data.password;
 
