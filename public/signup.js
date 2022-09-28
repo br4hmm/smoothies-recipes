@@ -10,18 +10,22 @@ form.addEventListener('submit', async event => {
   emailError.textContent = '';
   passwordError.textContent = '';
 
-  const result = await fetch('/signup', {
-    method: 'POST',
-    body: JSON.stringify({ email, password }),
-    headers: { 'Content-Type': 'application/json' },
-  });
+  try {
+    const result = await fetch('/signup', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' },
+    });
 
-  const data = await result.json();
+    const data = await result.json();
 
-  emailError.textContent = data.email;
-  passwordError.textContent = data.password;
+    emailError.textContent = data.email;
+    passwordError.textContent = data.password;
 
-  if (data.user) {
-    location.assign('/');
+    if (data.user) {
+      location.assign('/');
+    }
+  } catch (err) {
+    console.log(err.message);
   }
 });
