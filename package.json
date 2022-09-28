@@ -1,5 +1,5 @@
 {
-  "name": "hima-smoothies",
+  "name": "smoothies-recipes",
   "version": "1.0.0",
   "description": "Auth example project built with Express.js & MongoDB",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/br4hmm/hima-smoothies.git"
+    "url": "git+https://github.com/br4hmm/smoothies-recipes.git"
   },
   "keywords": [],
   "author": "Ibrahim Abu Ghali <ibrahimghali211@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/br4hmm/hima-smoothies/issues"
+    "url": "https://github.com/br4hmm/smoothies-recipes/issues"
   },
-  "homepage": "https://github.com/br4hmm/hima-smoothies#readme",
+  "homepage": "https://github.com/br4hmm/smoothies-recipes#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.6",

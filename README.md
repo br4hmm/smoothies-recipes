@@ -1,4 +1,4 @@
-# Hima Smoothies
+# Smoothies Recipes
 
 Auth example project built with Express.js & MongoDB
 
