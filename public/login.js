@@ -12,7 +12,7 @@ form.addEventListener('submit', async event => {
   passwordError.textContent = '';
 
   try {
-    const result = await fetch('/signup', {
+    const result = await fetch('/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },

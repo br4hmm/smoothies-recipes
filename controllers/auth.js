@@ -19,8 +19,10 @@ const postSignup = async (req, res) => {
   res.status(201).send({ user: user._id });
 };
 
-const postLogin = (req, res) => {
-  res.status(201).send(req.body);
+const postLogin = async (req, res) => {
+  const { email, password } = req.body;
+  const user = await User.login(email, password);
+  res.status(200).json({ user: user._id });
 };
 
 module.exports = {
