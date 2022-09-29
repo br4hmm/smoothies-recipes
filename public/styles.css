@@ -65,6 +65,11 @@ nav li a {
   background: #fee996;
 }
 
+.btn:active,
+button:active {
+  transform: scale(0.95);
+}
+
 form h2 {
   font-size: 2.4em;
   font-weight: 900;
