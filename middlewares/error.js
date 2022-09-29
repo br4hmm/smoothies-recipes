@@ -13,6 +13,16 @@ const errorHandler = (err, req, res, next) => {
     });
   }
 
+  // incorrect email
+  if (err.message === 'Incorrect Email') {
+    errors.email = 'Email is not registered';
+  }
+
+  // incorrect password
+  if (err.message === 'Incorrect Password') {
+    errors.password = 'Wrong Password, Try Again!';
+  }
+
   res.status(500).send(errors);
 };
 
