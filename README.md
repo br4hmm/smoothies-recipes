@@ -4,7 +4,13 @@ Auth example project built with Express.js & MongoDB
 
 ## Demo
 
-_Will be added soon..._
+![Screenshot 1](./screenshots/scn1.png)
+
+![Screenshot 2](./screenshots/scn2.png)
+
+![Screenshot 3](./screenshots/scn3.png)
+
+![Screenshot 4](./screenshots/scn4.png)
 
 ## All Routes
 
