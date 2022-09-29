@@ -28,9 +28,15 @@ const postLogin = async (req, res) => {
   res.status(200).send({ user: user._id });
 };
 
+const logOut = (req, res) => {
+  res.cookie('jwt', '', { maxAge: 1 });
+  res.redirect('/');
+};
+
 module.exports = {
   getSignup,
   getLogin,
   postSignup,
   postLogin,
+  logOut,
 };
